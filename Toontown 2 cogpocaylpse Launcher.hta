@@ -35,7 +35,7 @@ h1 {
 	    sysenv("TTI_PLAYCOOKIE") = username.Value&":"&password.Value
         sysenv("TTI_GAMESERVER") = "74.98.182.49"
         objShell.currentDirectory = objShell.currentDirectory&"\.."
-        objShell.Run("C:/Panda3D-1.9.0/python/ppython.exe -m toontown.toonbase.ToontownStart")
+        objShell.Run("C:/Panda3D-1.9.0/python/ppython.exe ToontownStart")
         set objShell = Nothing
         Me.Close
     End Sub
