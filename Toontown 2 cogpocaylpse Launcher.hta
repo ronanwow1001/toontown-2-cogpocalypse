@@ -32,8 +32,8 @@ h1 {
         Dim objShell
         set objShell = CreateObject ( "WScript.Shell" )
         set sysenv = objShell.Environment ( "PROCESS" )
-	    sysenv("TTI_PLAYCOOKIE") = username.Value&":"&password.Value
-        sysenv("TTI_GAMESERVER") = "74.98.182.49"
+	    sysenv("TTO_PLAYCOOKIE") = Account ID.Value&":"&password.Value
+        sysenv("TTO_GAMESERVER") = "https://web.archive.org/web/20190705031718/https://dl.toontownserver.com/"
         objShell.currentDirectory = objShell.currentDirectory&"\.."
         objShell.Run("C:/Panda3D-1.9.0/python/ppython.exe ToontownStart")
         set objShell = Nothing
@@ -42,7 +42,7 @@ h1 {
 </script>
 <body>
 <center>
-Username: <input type="text" name="username" size=16>
+Account ID: <input type="text" name="Account ID" size=16>
 Password: <input type="password" name="password" size=32>
 Get ready to play Toontown 2!!!
         <div class="col-lg-12 text-center">
